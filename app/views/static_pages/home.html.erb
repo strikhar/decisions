@@ -1,0 +1,17 @@
+<% if user_signed_in? %>
+<h1>Start making your perfect decision now.</h1>
+
+<% else %>
+<div class="center hero-unit">
+    <h1>Organize your heart and head.</h1>
+
+    <h2>
+      Sometimes we have to make life-changing 
+ <a href="http://static.fjcdn.com/gifs/Decisions+Decisions+Decisions.....+the+poor+kid+never+had+a+chance_46644f_3825373.gif">decisions</a>. 
+<br> We need something to help us through. </br>
+    </h2>
+
+    <%= link_to "Sign up now!", new_user_registration_path, 
+                                class: "btn btn-large btn-primary" %>
+</div>
+<% end %>
